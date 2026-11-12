@@ -4,64 +4,94 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ぎんざRuby会議02</title>
-  <style>
-    body {
-      font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-      background-color: #fff;
-      color: #222;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #cc0000;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.4rem;
-    }
-    main {
-      max-width: 720px;
-      margin: 3rem auto;
-      padding: 0 1rem;
-    }
-    .info-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 1.1rem;
-    }
-    .info-table th,
-    .info-table td {
-      padding: 0.9rem 1rem;
-      border-bottom: 1px solid #ddd;
-      text-align: left;
-      vertical-align: top;
-    }
-    .info-table th {
-      width: 7rem;
-      color: #666;
-      font-weight: normal;
-      white-space: nowrap;
-    }
-  </style>
+  <meta name="description" content="Rubyの話を、ぎんざで。Ginza.rb主催の地域Ruby会議、ぎんざRuby会議02。2027年1月23日（土）、株式会社マイベスト イベントスペースにて開催。">
+  <meta property="og:title" content="ぎんざRuby会議02">
+  <meta property="og:description" content="2027年1月23日（土）、株式会社マイベスト イベントスペースにて開催。">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#efeddf">
+  <link rel="icon" href="./assets/images/logo-ginzarb.png" type="image/png">
+  <link rel="preload" href="./assets/fonts/kaisei-decol-title.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
-  <header>
-    <h1>ぎんざRuby会議02</h1>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <a class="community-link" href="https://ginzarb.github.io/" aria-label="主催コミュニティ Ginza.rb">
+      <img src="./assets/images/logo-ginzarb.png" alt="" width="404" height="378">
+      <span>ginza.rb</span>
+    </a>
+    <nav class="site-nav" aria-label="メインナビゲーション">
+      <a href="#information">開催概要 <span aria-hidden="true">↓</span></a>
+      <a href="https://ginzarb.github.io/kaigi01/">前回の会議 <span aria-hidden="true">↗</span></a>
+    </nav>
   </header>
-  <main>
-    <table class="info-table">
-      <tr>
-        <th>開催日</th>
-        <td>2027年1月23日（土）</td>
-      </tr>
-      <tr>
-        <th>会場</th>
-        <td>株式会社マイベスト イベントスペース</td>
-      </tr>
-    </table>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="conference-title">
+      <p class="hero-eyebrow"><span aria-hidden="true">◆</span> LOCAL RUBY CONFERENCE IN GINZA <span aria-hidden="true">◆</span></p>
+      <h1 class="hero-title" id="conference-title">
+        <span class="hero-title-name">
+          <span class="hero-title-ginza">ぎんざ</span>
+          <span class="hero-title-main"><span class="hero-title-ruby">Ruby</span>会議</span>
+        </span>
+        <span class="hero-title-edition">02</span>
+      </h1>
+      <p class="hero-catchphrase">Rubyの話を、ぎんざで。</p>
+      <p class="hero-intro">つくる人、学ぶ人、語りたい人。<br>Rubyを囲んで、また集まりましょう。</p>
+      <img class="hero-cat hero-cat-middle" src="./assets/images/pic-middle.png" alt="" width="320" height="377">
+      <img class="hero-cat hero-cat-laptop" src="./assets/images/pic-macbook.png" alt="" width="300" height="405">
+      <a class="hero-scroll" href="#information">開催概要を見る <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="information" id="information" aria-labelledby="information-title">
+      <div class="section-heading">
+        <span class="section-heading-en" lang="en">INFORMATION</span>
+        <h2 id="information-title">開催概要</h2>
+      </div>
+      <div class="event-details">
+        <dl class="event-facts">
+          <div class="event-fact event-fact-date">
+            <dt>開催日 <span lang="en">DATE</span></dt>
+            <dd>
+              <time datetime="2027-01-23"><span class="date-year">2027</span><span class="date-month-day">.01.23</span><span class="date-weekday">土<span lang="en">SAT</span></span></time>
+            </dd>
+          </div>
+          <div class="event-fact event-fact-venue">
+            <dt>会場 <span lang="en">VENUE</span></dt>
+            <dd>株式会社マイベスト<br><span class="venue-room">イベントスペース</span></dd>
+          </div>
+        </dl>
+        <p class="event-note"><span class="event-note-mark" aria-hidden="true">●</span><span>プログラムや参加方法など、詳しい情報は順次お知らせします。</span></p>
+      </div>
+    </section>
+
+    <section class="about" aria-labelledby="about-title">
+      <div class="about-copy">
+        <span class="section-heading-en" lang="en">HELLO, AGAIN.</span>
+        <h2 id="about-title">また、ぎんざで会いましょう。</h2>
+        <p>ぎんざRuby会議02は、Rubyの地域コミュニティ<br class="desktop-break">「Ginza.rb」が主催する地域Ruby会議です。</p>
+        <p>日々の発見を持ち寄って、話して、つながる。<br class="desktop-break">そんな一日を、ぎんざでご一緒に。</p>
+        <a class="text-link" href="https://ginzarb.github.io/">Ginza.rbについて <span aria-hidden="true">↗</span></a>
+      </div>
+      <img class="about-cats" src="./assets/images/pic-tourists.png" alt="" width="600" height="478" loading="lazy">
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <a class="footer-organizer" href="https://ginzarb.github.io/">
+        <img src="./assets/images/logo-ginzarb.png" alt="" width="404" height="378" loading="lazy">
+        <span><span class="footer-label">主催</span><span class="footer-community">ginza.rb</span></span>
+      </a>
+      <div class="footer-links">
+        <a href="https://ginzarb.github.io/kaigi01/">ぎんざRuby会議01 <span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/ginzarb/kaigi02">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <div class="footer-colophon">
+      <small>© 2027 Ginza.rb</small>
+      <small>Illustration: <a href="https://github.com/ken1flan">@ken1flan</a><span class="illustration-source">（ぎんざRuby会議01より）</span></small>
+    </div>
+  </footer>
 </body>
 </html>
